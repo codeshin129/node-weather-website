@@ -18,6 +18,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       const current = body.current;
       const temperature = current.temperature;
+
       callback(undefined, temperature);
     }
   });
